@@ -1,0 +1,5 @@
+#!/bin/sh
+cd $DEV/$USER/extended_input
+cp $(CMIP6_ARCHIVE_ROOT)/ScenarioMIP/ssp126/RCP2.6_SSP1_2001-2100_transitions_v20180906.nc $DEV/$USER/extended_input/
+cp $(CMIP6_ARCHIVE_ROOT)/ScenarioMIP/ssp126/RCP2.6_SSP1_2001-2100_states_v20180906.nc $DEV/$USER/extended_input/
+cd -

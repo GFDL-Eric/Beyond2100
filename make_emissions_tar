@@ -1,0 +1,4 @@
+#!/bin/sh
+cd $DEV/$USER/extended_input
+tar -cvf emissions.0.5x0.5.2010-2101_20190312.tar emissions*nc
+cd -
