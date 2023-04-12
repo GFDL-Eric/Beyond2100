@@ -1,0 +1,31 @@
+population:
+  in_dir: '$DEV$USER/extended_input'
+  timevar: TIME
+  lonvar: LON1
+  latvar: LAT1
+  freq: annual
+  debug: True
+  moredebug: False
+emissions:
+  in_dir: '$DEV$USER/extended_input'
+  freq: monthly
+  debug: True
+  moredebug: False
+w_data:
+  in_dir: '$DEV$USER/extended_input'
+  freq: monthly
+  fill_in: True
+  debug: True
+  moredebug: False
+RCP2.6:
+  in_dir: '$DEV$USER/extended_input'
+  freq: annual
+  no_decode: True
+  debug: True
+  moredebug: False
+landuse:
+  in_dir: '$DEV$USER/extended_input'
+  freq: annual
+  no_decode: True
+  debug: True
+  moredebug: False

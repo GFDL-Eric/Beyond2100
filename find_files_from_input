@@ -1,0 +1,8 @@
+#!/bin/bash
+# Note: This does not include necessary files such as the RCP2.6 states and transitions files, and it does not include co2_data.nc and co2_emission.nc (as I did not need those).
+INPUT_DIR=$1
+OUTPUT_DIR=$DEV/$USER/extended_input
+for fil in $(ls ${INPUT_DIR}/*.nc | grep -v "tile[1-6]" | grep -v "co2_data" | grep -v "co2_emiss" | grep -v "o3.climatology"); do
+  #ncdump -h $fil | grep -i "time =" | grep -qEv "1 |12 " && echo $(basename $fil) >> plausible_file_list;
+  ncdump -h $fil | grep -i "time =" | grep -qEv "1 |12 " && mv $fil $OUTPUT_DIR/;
+done
